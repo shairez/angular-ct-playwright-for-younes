@@ -37,7 +37,15 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.2",
-    "unplugin-swc": "^1.5.1",
-    "vite": "^6.2.2"
+    "unplugin-swc": "^1.5.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "lmdb",
+      "msgpackr-extract"
+    ]
   }
 }
