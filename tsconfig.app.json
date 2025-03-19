@@ -11,5 +11,12 @@
   ],
   "include": [
     "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "playwright-ct.config.ts",
+    "**/*.pw.ts",
+    "**/*.pw.js",
+    "**/*.pw.tsx",
+    "**/*.pw.jsx"
   ]
 }
