@@ -6,6 +6,7 @@
   },
   "include": [
     "playwright-ct.config.ts",
+    "playwright/index.ts",
     "src/**/*.pw.ts"
-  ],
+  ]
 }

@@ -1,3 +1,4 @@
+import angular from '@analogjs/vite-plugin-angular';
 import { defineConfig, devices } from '@jscutlery/playwright-ct-angular';
 import { swcAngularUnpluginOptions } from '@jscutlery/swc-angular';
 import swc from 'unplugin-swc';
@@ -31,11 +32,13 @@ export default defineConfig({
     ctPort: 3100,
 
     ctViteConfig: {
-      // ...
       plugins: [
-        swc.vite(swcAngularUnpluginOptions())
-      ]
-    } as any
+        // angular({
+        //   tsconfig: 'tsconfig.pw.json',
+        // }),
+        swc.vite(swcAngularUnpluginOptions()),
+      ],
+    },
   },
 
   /* Configure projects for major browsers */
