@@ -1,16 +1,19 @@
 {
   "name": "angular-ct-playwright",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "reset": "rm -rf playwright/.cache",
     "test": "ng test",
     "test-ct": "playwright test -c playwright-ct.config.ts"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^19.2.0",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
@@ -23,6 +26,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@analogjs/vite-plugin-angular": "1.14.1",
     "@angular-devkit/build-angular": "^19.2.3",
     "@angular/cli": "^19.2.3",
     "@angular/compiler-cli": "^19.2.0",
